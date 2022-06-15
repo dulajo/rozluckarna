@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <title>Rozlučkárna</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
@@ -10,10 +11,10 @@
       <nav>
         <a href="#section1">Domů</a>
         <a href="#section2">O nás</a>
-        <a href="#section3">Průvodní dopis</a>
         <div class="dropdown-menu">
-          <button class="menu-btn">Úkoly</button>
-          <div class="menu-content">
+          <button class="menu-btn" onclick="myFunction()">Úkoly</button>
+          <div id="myDropdown" class="menu-content">
+            <a class="links-hidden" href="#section3">Úvod</a>
             <a class="links-hidden" href="#section4">č.1</a>
             <a class="links-hidden" href="#section5">č.2</a>
           </div>
@@ -46,7 +47,7 @@
           Naše společnost plánuje a organizuje rozlučkové zážitky na míru s
           důrazem na spokojenost a pohodlí všech zúčastněných (kromě ženicha)
         </p>
-        <p class="thirdText">
+        <p class="secondText">
           Pokud během naší akci vznikne subjektu (ženich) jeden z níže uvedených
           stavů
         </p>
@@ -57,16 +58,16 @@
           Vzdává se společnost Rozlučkárna odpovědnosti. Kontaktujte prosím
           svoji pojišťovnu
         </p>
-        <p class="secondText">Kontakt - rozluckarna@gmail.com</p>
+        <p class="mainText">Kontakt - rozluckarna@gmail.com</p>
       </div>
     </div>
 
     <!-- pruvodni dopis  -->
     <div id="section3" class="section">
       <div class="text-wr">
-        <h1 class="title">Průvodní dopis</h1>
-        <p class="fourText">Drahocenný Davide,</p>
-        <p class="fourText">
+        <h1 class="title">Úvodní dopis</h1>
+        <p class="secondText">Drahocenný Davide,</p>
+        <p class="secondText">
           u nás ve společnosti Rozlučkárna klademe důraz především na
           spokojenost našich klientů. Proto nám dovol, abychom Ti tímto dopisem
           představili jedinečnou příležitost, kterou můžeš ovlivnit situace,
@@ -74,27 +75,27 @@
           formou prostých úkolů. Jediné, o co se Ty musíš postarat, je jejich
           kvalitní splnění a následné předložení důkazu.
         </p>
-        <p class="fourText">
+        <p class="secondText">
           Výsledky úkolů budou naší organizací bedlivě přezkoumány, vyhodnoceny
           a zahrnuty do dalších operačních plánů. Úkoly nejsou povinné a je vždy
           na tobě, jak se k nim postavíš. Nicméně na tebe apelujeme, neber je na
           lehkou váhu, pozitivní dopady oceníš, ale negativních můžeš velmi
           litovat.
         </p>
-        <p class="fourText">
+        <p class="secondText">
           Na závěr ještě připomínám, že při nákupu našich služeb, byl podepsán
           reverz. Z čehož vyplývá, že jakákoliv újma na zdraví, ať už fyzická či
           psychická, bude řešena výhradně z ženichova pojistného.
         </p>
-        <p class="fourText">
+        <p class="secondText">
           V případě jakéhokoliv dotazu nás neváhej kontaktovat na e- mail:
           rozluckarna@gmail.com. Veškeré důležité informace budou také k
           dispozici u nás na webu www.rozluckarna.cz.
         </p>
-        <p class="fourText">
+        <p class="secondText">
           S pozdravem a přáním plna úspěšně splněných úkolů,
         </p>
-        <p class="fourText">Kluci z Rozlučkárny.</p>
+        <p class="secondText">Kluci z Rozlučkárny.</p>
       </div>
     </div>
 
@@ -120,6 +121,7 @@
           důkaz zašli krátké video nebo několik selfie fotek z cesty na e-mail:
           rozluckarna@gmail.com
         </p>
+        <p class="oslavnyText">GRATULUJEME SPLNĚNO :)</p>
       </div>
     </div>
 
@@ -151,6 +153,28 @@
       window.slide = new SlideNav({
         changeHash: true,
       });
+    </script>
+
+    <script>
+      /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".menu-btn")) {
+          var dropdowns = document.getElementsByClassName("menu-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
     </script>
   </body>
 </html>

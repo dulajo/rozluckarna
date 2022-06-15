@@ -5,24 +5,22 @@ html {
 }
 
 .section {
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   text-align: center;
   font-family: sans-serif, arial;
   margin: 0;
+  background: black;
+  color: #ff99cc;
+  overflow: hidden;
 }
 
-h1,
-p {
-  margin: 0;
-  font-family: sans-serif, arial;
-  font-weight: bold;
+h1 {
+  margin-top: 7ch;
 }
-
 .text-wr {
-  position: absolute;
-  margin-left: 2ch;
-  margin-right: 2ch;
+  margin-left: 4ch;
+  margin-right: 4ch;
   margin-top: 10ch;
 }
 
@@ -37,31 +35,6 @@ p {
   transform: translate(-50%, -50%);
 }
 
-#section1 {
-  background: black;
-  color: #ff99cc;
-}
-
-#section2 {
-  background: black;
-  color: #ff99cc;
-}
-
-#section3 {
-  background: black;
-  color: #ff99cc;
-}
-
-#section4 {
-  background: black;
-  color: #ff99cc;
-}
-
-#section5 {
-  background: black;
-  color: #ff99cc;
-}
-
 .nav {
   position: fixed; /*left: 50%;*/
   width: 100%;
@@ -70,6 +43,13 @@ p {
   padding-left: 10px;
   text-align: center;
   background-color: black;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 150px;
+
+  top: 0px;
 }
 
 .nav a {
@@ -85,16 +65,28 @@ p {
   text-decoration: none;
   color: white;
   font-family: "Courier", monospace;
-  font-size: 35px;
+  font-size: 4vh;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav a {
+    font-size: 4vh;
+  }
 }
 
 .nav a.active {
   background: rgba(0, 0, 0, 0.5);
-  color: white;
+  color: pink;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav a.active {
+    font-size: 6vh;
+  }
 }
 
 .nav a:hover .dropdown:hover .dropbtn {
-  background: #ff99cc;
+  background: pink;
 }
 
 .fork-wr img {
@@ -118,21 +110,21 @@ p {
   background-color: black;
 }
 
-.dropdown-menu:hover .menu-content {
-  display: block;
-}
-
-.dropdown-menu:hover {
-  background-color: pink;
-}
-
 .menu-btn {
   background-color: black;
   color: white;
   padding: 16px;
   font-family: "Courier", monospace;
-  font-size: 35px;
+  font-size: 4vh;
   border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-btn {
+    font-size: 4vh;
+  }
 }
 
 .dropdown-menu {
@@ -147,6 +139,15 @@ p {
   min-width: 200px;
   font-size: 10px;
   font-family: "Courier", monospace;
+  overflow: auto;
+  z-index: 1;
+}
+
+.menu-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
 svg {
@@ -171,48 +172,91 @@ use {
   }
 }
 
+/* nadpisy pro sekce */
 .title {
   color: pink;
   font-family: "Courier", monospace;
   font-size: 4vh;
 }
 
-.mainTitle {
-  color: white;
-  font-family: "Courier", monospace;
-  font-size: 280px;
-}
-
+/* root text v prvni sekci About us */
 .mainText {
   color: white;
   font-family: "Courier", monospace;
   font-size: 3vh;
 }
 
+/* hlavni text pro ukoly */
 .secondText {
   color: white;
   font-family: "Courier", monospace;
-  font-size: 2vh;
+  font-size: 2.5vh;
   padding-bottom: 1ch;
 }
 
+/* odrazeny second text */
 .thirdText {
   color: white;
   font-family: "Courier", monospace;
-  font-size: 2vh;
+  font-size: 2.5vh;
   padding-bottom: 1ch;
 }
 
+/* pruvodni dopis text */
 .fourText {
   color: white;
   font-family: "Courier", monospace;
-  font-size: 1.9vh;
+  font-size: 2.5vh;
   padding-bottom: 1ch;
 }
 
+/* main nadpis rozluckarna */
 .fifthText {
   color: white;
   font-family: "Courier", monospace;
   font-size: 100px;
   margin-top: 5%;
+}
+
+/* main nadpis rozluckarna */
+.oslavnyText {
+  color: greenyellow;
+  font-family: "Courier", monospace;
+  font-size: 5vh;
+  padding-bottom: 1ch;
+}
+
+/* desktop styles */
+@media screen and (min-width: 1024px) {
+  .mainText {
+    color: white;
+    font-family: "Courier", monospace;
+    font-size: 4vh;
+  }
+  /* hlavni text pro ukoly */
+  .secondText {
+    color: white;
+    font-family: "Courier", monospace;
+    font-size: 3vh;
+    padding-bottom: 1ch;
+  }
+
+  /* main nadpis rozluckarna */
+  .fifthText {
+    color: white;
+    font-family: "Courier", monospace;
+    font-size: 200px;
+    margin-top: 5%;
+  }
+
+  .oslavnyText {
+    color: greenyellow;
+    font-family: "Courier", monospace;
+    font-size: 5vh;
+    padding-bottom: 1ch;
+  }
+}
+
+.show {
+  display: block;
 }
