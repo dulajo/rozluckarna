@@ -1,0 +1,218 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  font-family: sans-serif, arial;
+  margin: 0;
+}
+
+h1,
+p {
+  margin: 0;
+  font-family: sans-serif, arial;
+  font-weight: bold;
+}
+
+.text-wr {
+  position: absolute;
+  margin-left: 2ch;
+  margin-right: 2ch;
+  margin-top: 10ch;
+}
+
+.text-wr-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#section1 {
+  background: black;
+  color: #ff99cc;
+}
+
+#section2 {
+  background: black;
+  color: #ff99cc;
+}
+
+#section3 {
+  background: black;
+  color: #ff99cc;
+}
+
+#section4 {
+  background: black;
+  color: #ff99cc;
+}
+
+#section5 {
+  background: black;
+  color: #ff99cc;
+}
+
+.nav {
+  position: fixed; /*left: 50%;*/
+  width: 100%;
+  top: 20px;
+  z-index: 9;
+  padding-left: 10px;
+  text-align: center;
+  background-color: black;
+}
+
+.nav a {
+  padding: 7px 20px;
+  border-radius: 7px;
+  margin-right: 10px;
+  background: black;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  text-decoration: none;
+  color: white;
+  font-family: "Courier", monospace;
+  font-size: 35px;
+}
+
+.nav a.active {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.nav a:hover .dropdown:hover .dropbtn {
+  background: #ff99cc;
+}
+
+.fork-wr img {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+
+.links-hidden {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.links-hidden:hover,
+.links:hover {
+  background-color: black;
+}
+
+.dropdown-menu:hover .menu-content {
+  display: block;
+}
+
+.dropdown-menu:hover {
+  background-color: pink;
+}
+
+.menu-btn {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-family: "Courier", monospace;
+  font-size: 35px;
+  border: none;
+}
+
+.dropdown-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 200px;
+  font-size: 10px;
+  font-family: "Courier", monospace;
+}
+
+svg {
+  max-width: 25em;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px #000;
+  background: #000;
+  fill: none;
+  stroke: #222;
+  stroke-linecap: round;
+  stroke-width: 8%;
+}
+
+use {
+  stroke: #fff;
+  animation: a 2s linear infinite;
+}
+
+@keyframes a {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+.title {
+  color: pink;
+  font-family: "Courier", monospace;
+  font-size: 4vh;
+}
+
+.mainTitle {
+  color: white;
+  font-family: "Courier", monospace;
+  font-size: 280px;
+}
+
+.mainText {
+  color: white;
+  font-family: "Courier", monospace;
+  font-size: 3vh;
+}
+
+.secondText {
+  color: white;
+  font-family: "Courier", monospace;
+  font-size: 2vh;
+  padding-bottom: 1ch;
+}
+
+.thirdText {
+  color: white;
+  font-family: "Courier", monospace;
+  font-size: 2vh;
+  padding-bottom: 1ch;
+}
+
+.fourText {
+  color: white;
+  font-family: "Courier", monospace;
+  font-size: 1.9vh;
+  padding-bottom: 1ch;
+}
+
+.fifthText {
+  color: white;
+  font-family: "Courier", monospace;
+  font-size: 100px;
+  margin-top: 5%;
+}
