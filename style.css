@@ -194,6 +194,15 @@ use {
   padding-bottom: 1ch;
 }
 
+/* hlavni text pro ukoly pro osloveni*/
+.secondTextBold {
+  color: white;
+  font-family: "Courier", monospace;
+  font-size: 2.5vh;
+  padding-bottom: 1ch;
+  font-weight: bold;
+}
+
 /* odrazeny second text */
 .thirdText {
   color: white;
@@ -239,6 +248,15 @@ use {
     font-family: "Courier", monospace;
     font-size: 3vh;
     padding-bottom: 1ch;
+  }
+
+  /* hlavni text pro ukoly pro osloveni*/
+  .secondTextBold {
+    color: white;
+    font-family: "Courier", monospace;
+    font-size: 3vh;
+    padding-bottom: 1ch;
+    font-weight: bold;
   }
 
   /* main nadpis rozluckarna */
