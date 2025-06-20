@@ -9,19 +9,25 @@
 <body>
 <div class="nav">
     <nav>
-        <!--<a href="#section1">Domů</a>-->
-        <!--<a href="#section2">O nás</a>-->
-        <!--<div class="dropdown-menu">
-            <button class="menu-btn" onclick="myFunction()">Dopisy</button>
-            <div id="myDropdown" class="menu-content">
-                <a class="links-hidden" href="#section3">Úvod</a>
-                <a class="links-hidden" href="#section4">č.1</a>
-                <a class="links-hidden" href="#section5">č.2</a>
-                <a class="links-hidden" href="#section6">č.3</a>
-                <a class="links-hidden" href="#section7">č.4</a>
-                <a class="links-hidden" href="#section8">č.5</a>
+        <a href="#section1">Domů</a>
+        <a href="#section2">O nás</a>
+        <div class="dropdown-menu">
+            <button class="menu-btn" onclick="myFunction('lukyDropDown', event)">Luky</button>
+            <div id="lukyDropDown" class="menu-content">
+                <a class="links-hidden-luky" href="#section3-luky">Úvod</a>
             </div>
-        </div>-->
+        </div>
+        <div class="dropdown-menu">
+            <button class="menu-btn" onclick="myFunction('daviDropDown', event)">Daví</button>
+            <div id="daviDropDown" class="menu-content">
+                <a class="links-hidden-dejv" href="#section3-dejv">Úvod</a>
+                <a class="links-hidden-dejv" href="#section4-dejv">č.1</a>
+                <a class="links-hidden-dejv" href="#section5-dejv">č.2</a>
+                <a class="links-hidden-dejv" href="#section6-dejv">č.3</a>
+                <a class="links-hidden-dejv" href="#section7-dejv">č.4</a>
+                <a class="links-hidden-dejv" href="#section8-dejv">č.5</a>
+            </div>
+        </div>
     </nav>
 </div>
 <!--  hlavni stranka s logem  -->
@@ -38,7 +44,9 @@
                     stroke-dashoffset="6713px"
             ></use>
         </svg>
-        <a class="fifthText" href="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2xocWNuM2NzM3ZibG5lYWJ5Y3libm02eTAxYWZla3Zjcnpqcm5wayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/804TNmnYLfNao/giphy.gif"><p class="fifthText">ROZLUČKÁRNA</p></a>
+        <a class="fifthText"
+           href="https://www.youtube.com/watch?v=oavMtUWDBTM&list=RDoavMtUWDBTM&t=27s">
+            <p class="fifthText">ROZLUČKÁRNA</p></a>
         <p class="mainText">
             NĚCO SE CHYSTÁ
         </p>
@@ -46,7 +54,7 @@
 </div>
 
 <!-- about us  -->
-<!--<div id="section2" class="section">
+<div id="section2" class="section">
     <div class="text-wr">
         <h1 class="title">O nás</h1>
         <p class="mainText">
@@ -65,14 +73,63 @@
             svoji pojišťovnu
         </p>
         <p class="mainText">Kontakt - rozluckarna@gmail.com</p>
-        &lt;!&ndash;<a class="title" href="https://photos.app.goo.gl/tqFGsg8iRBJoBZDW7"><p class="title">DOSAVADNÍ DŮKAZNÍ
-            MATERIÁL</p></a>&ndash;&gt;
+        <!--<a class="title" href="https://photos.app.goo.gl/tqFGsg8iRBJoBZDW7"><p class="title">DOSAVADNÍ DŮKAZNÍ
+            MATERIÁL</p></a>-->
 
     </div>
-</div>-->
-<!--
-&lt;!&ndash; pruvodni dopis  &ndash;&gt;
-<div id="section3" class="section">
+</div>
+<!-- pruvodni dopis  -->
+<div id="section3-luky" class="section luky-section hidden">
+    <div class="text-wr">
+        <h1 class="title">Úvodní dopis</h1>
+        <p class="secondTextBold">Láskyplný Lukáši,</p>
+        <p class="secondText">
+            rádi bychom Tě přivítali v náručí zcela dobrovolného programu Rozlučkárna – podniku specializovaného na precizně cílené, dojemně nepříjemné a život
+            měnící zážitky na míru. Tímto dopisem Ti děkujeme za tvé svobodné přihlášení, které proběhlo v momentě, kdy jsi požádal o ruku naší Gábinky.
+            Gratulujeme!
+        </p>
+        <p class="secondText">
+            Náš tým odborníků na nevhodné situace pro Tebe připravil sérii zážitků, které Tě nejen posílí, ale hlavně nám přinesou uspokojení. Vše proběhne
+            formou tzv. úkolů – jinými slovy: my vymyslíme, Ty děláš. Princip jednoduchý, účel hluboký, výsledky… nejisté.
+        </p>
+        <p class="secondText">
+            Úkoly nejsou závazné, ale jejich (ne)splnění bude samozřejmě zaznamenáno, analyzováno a případně použito proti Tobě.
+        </p>
+        <p class="secondText">
+            Pro účely archivace a veřejného výsměchu prosím dodej důkazy – fotky, videa nebo přiznání. A nezapomeň, že při vstupu do naší organizace jsi
+            automaticky podepsal reverz – jakákoli újma, ať už fyzická, psychická nebo existenční, bude řešena výhradně z Tvého pojistného a případných úspor
+            Gábiny. Děkujeme za pochopení.
+        </p>
+        <p class="secondTextBold">
+            Úvodní výzva
+        </p>
+        <p class="secondText">
+            V neděli večer tě čeká první zkouška: na pub kvíz dorazíš v přestrojení za ananas. Styl, materiál, výraz v očích – všechno je na Tobě. Hodnocení
+            bude přísné, následky nejasné, ostuda pravděpodobná.
+        </p>
+        <p class="secondText">
+            Kluci z Rozlučkárny včetně všech tvých spoluhráčů, mají právo kdykoli kohokoli z přítomných – hostů, obsluhy, kolemjdoucích nebo kvíz mistra –
+            oslovit jedinou otázkou:
+        </p>
+        <p class="secondTextBold">
+            „Za co je ten člověk přestrojen?“
+        </p>
+        <p class="secondText">
+            Pokud dotyčný neodpoví bez váhání „za ananas“, považuje se přestrojení za nepřesvědčivé. A to znamená trest.
+        </p>
+        <p class="secondText">
+            Těšíme se na tuto pouť plnou trapných momentů, vnitřních otázek a zcela zbytečných výzev. A věříme, že na jejím konci najdeme nového, silnějšího a o
+            něco unavenějšího muže.
+        </p>
+        <p class="secondText">
+            S respektem k odvaze s námi spolupracovat,
+        </p>
+
+        <p class="secondText">Kluci z Rozlučkárny.</p>
+    </div>
+</div>
+<!-- pruvodni dopis  -->
+<div id="section3-dejv" class="section dejv-section hidden">
     <div class="text-wr">
         <h1 class="title">Úvodní dopis</h1>
         <p class="secondTextBold">Drahocenný Davide,</p>
@@ -108,8 +165,8 @@
     </div>
 </div>
 
-&lt;!&ndash; ukol 1  &ndash;&gt;
-<div id="section4" class="section">
+<!-- ukol 1  -->
+<div id="section4-dejv" class="section dejv-section hidden">
     <div class="text-wr">
         <h1 class="title">Úkol č.1</h1>
         <p class="secondTextBold">Milý Davide,</p>
@@ -134,8 +191,8 @@
     </div>
 </div>
 
-&lt;!&ndash; ukol 2  &ndash;&gt;
-<div id="section5" class="section">
+<!-- ukol 2  -->
+<div id="section5-dejv" class="section dejv-section hidden">
     <div class="text-wr">
         <h1 class="title">Úkol č.2</h1>
         <p class="secondTextBold">Čarokrásný Davide,</p>
@@ -158,8 +215,8 @@
     </div>
 </div>
 
-&lt;!&ndash; ukol 3  &ndash;&gt;
-<div id="section6" class="section">
+<!-- ukol 3  -->
+<div id="section6-dejv" class="section dejv-section hidden">
     <div class="text-wr">
         <h1 class="title">Úkol č.3</h1>
         <p class="secondTextBold">Tajuplný Davide,</p>
@@ -188,8 +245,8 @@
     </div>
 </div>
 
-&lt;!&ndash; odmena 1  &ndash;&gt;
-<div id="section7" class="section">
+<!-- odmena 1  -->
+<div id="section7-dejv" class="section dejv-section hidden">
     <div class="text-wr">
         <h1 class="title">Odměna č.1</h1>
         <p class="secondTextBold">Všemocný Davide,</p>
@@ -225,8 +282,8 @@
     </div>
 </div>
 
-&lt;!&ndash; ukol 4  &ndash;&gt;
-<div id="section8" class="section">
+<!-- ukol 4  -->
+<div id="section8-dejv" class="section dejv-section hidden">
     <div class="text-wr">
         <h1 class="title">Úkol č.4</h1>
         <p class="secondTextBold">Inspirativní Davide,</p>
@@ -261,8 +318,9 @@
         </p>
         <p class="secondText">Šťastnou cestu a kolektivně se modlíme, aby měli jen pivo ve
             skle! Ruksak a otvírák s sebou!</p>
+        <p class="oslavnyText">GRATULUJEME SPLNĚNO :)</p>
     </div>
-</div>-->
+</div>
 
 <script src="dist/slideNav.js" type="text/javascript"></script>
 <script>
@@ -272,22 +330,36 @@
 </script>
 
 <script>
-    /* When the user clicks on the button,
-  toggle between hiding and showing the dropdown content */
-    function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
+    function myFunction(openId, event) {
+        if (event) event.preventDefault();
+
+        const dropdowns = document.getElementsByClassName("menu-content");
+
+        // Skryj sekce druhého člověka
+        if (openId === "lukyDropDown") {
+            document.querySelectorAll(".dejv-section").forEach(el => el.classList.add("hidden"));
+            document.querySelectorAll(".luky-section").forEach(el => el.classList.remove("hidden"));
+        } else if (openId === "daviDropDown") {
+            document.querySelectorAll(".luky-section").forEach(el => el.classList.add("hidden"));
+            document.querySelectorAll(".dejv-section").forEach(el => el.classList.remove("hidden"));
+        }
+
+        // Dropdown logika
+        for (let i = 0; i < dropdowns.length; i++) {
+            if (dropdowns[i].id !== openId) {
+                dropdowns[i].classList.remove("show");
+            }
+        }
+
+        document.getElementById(openId).classList.toggle("show");
     }
 
-    // Close the dropdown if the user clicks outside of it
+    // Zavře dropdowny při kliknutí mimo
     window.onclick = function (event) {
         if (!event.target.matches(".menu-btn")) {
-            var dropdowns = document.getElementsByClassName("menu-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains("show")) {
-                    openDropdown.classList.remove("show");
-                }
+            const dropdowns = document.getElementsByClassName("menu-content");
+            for (let i = 0; i < dropdowns.length; i++) {
+                dropdowns[i].classList.remove("show");
             }
         }
     };
